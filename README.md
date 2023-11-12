@@ -10,4 +10,4 @@ Serves as a comprehensive digital portfolio, enabling presentations of work, pro
 
 ## Getting Started
 
-Visit [https://gabrielvotaw.web.app](https://gabrielvotaw.web.app) to view the portfolio.
+Visit [https://www.gabrielvotaw.dev](https://www.gabrielvotaw.dev) to view the portfolio.
