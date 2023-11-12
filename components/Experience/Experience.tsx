@@ -10,7 +10,7 @@ function Experience(props: BoxComponentProps) {
           <Button onClick={() => openInNewTab('https://www.lsu.edu/')} size='compact-xs' variant='light' color='grape' rightSection={<IconExternalLink size={15} />}>
             Louisiana State University
           </Button>&nbsp;.
-        Over the last two years, I&apos;ve gained experience creating large-scale systems with technologies such as Express, React and Next.js, Flutter, Google Cloud, and more.
+        Over the last few years, I&apos;ve gained experience creating large-scale systems with technologies such as Express, React and Next.js, Flutter, Google Cloud, and more.
       </Text>
     </Box>
   )

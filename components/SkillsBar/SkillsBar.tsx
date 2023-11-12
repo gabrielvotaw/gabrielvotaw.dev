@@ -8,17 +8,45 @@ import ReactIcon from '@/public/icons/react.svg';
 import { Card, CardProps, Group, Image } from '@mantine/core';
 import NextImage from 'next/image';
 
+const iconsData = [
+  {
+    src: ExpressIcon,
+    alt: 'Express',
+    style: { backgroundColor: 'white', padding: 5 }
+  },
+  {
+    src: FlutterIcon,
+    alt: 'Flutter',
+  },
+  {
+    src: NextIcon,
+    alt: 'Next',
+  },
+  {
+    src: AndroidIcon,
+    alt: 'Android',
+  },
+  {
+    src: ReactIcon,
+    alt: 'React',
+  },
+  {
+    src: GoogleCloudIcon,
+    alt: 'Google Cloud',
+  },
+  {
+    src: PythonIcon,
+    alt: 'Python',
+  }
+]
+
 function SkillsBar(props: CardProps) {
   return (
     <Card {...props} withBorder>
       <Group gap={50} justify='center'>
-        <Image src={ExpressIcon} alt='TypeScript' w={125} h={30} p={5} component={NextImage} style={{ backgroundColor: 'white' }} />
-        <Image src={FlutterIcon} alt='Flutter' w={125} h={30} component={NextImage} />
-        <Image src={NextIcon} alt='Next' w={125} h={30} component={NextImage} />
-        <Image src={AndroidIcon} alt='Android' w={125} h={30} component={NextImage} />
-        <Image src={ReactIcon} alt='React' w={125} h={30} component={NextImage} />
-        <Image src={GoogleCloudIcon} alt='Google Cloud' w={125} h={30} component={NextImage} />
-        <Image src={PythonIcon} alt='Python' w={125} h={30} component={NextImage} />
+        {iconsData.map((item, index) => (
+          <Image key={index} src={item.src} alt={item.alt} w={125} h={30} component={NextImage} style={item.style} />
+        ))}
       </Group>
     </Card>
   )
